@@ -59,5 +59,5 @@ DB_PORT=5432
 ```bash
 curl -X POST http://localhost:3000/api/products \
   -H "Content-Type: application/json" \
-  -d '{"name":"Product X","price":29.99}'
+  -d '{"name":"Product X","description": "Product X desc"}'
 ```
