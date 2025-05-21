@@ -1,4 +1,3 @@
-```
 # Product API (Express + TypeScript)
 
 A RESTful CRUD API built with **Express.js** that toggles between PostgreSQL (Sequelize) and in-memory data based on `.env` configuration.
@@ -59,5 +58,4 @@ DB_PORT=5432
 curl -X POST http://localhost:3000/api/products \
   -H "Content-Type: application/json" \
   -d '{"name":"Product X","price":29.99}'
-```
 ```
