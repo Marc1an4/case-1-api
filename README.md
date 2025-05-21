@@ -2,17 +2,19 @@
 
 A RESTful CRUD API built with **Express.js** that toggles between PostgreSQL (Sequelize) and in-memory data based on `.env` configuration.
 
+⚠️ **Important Storage Notice**  
+This API automatically works in two modes:  
+- **With `.env` file**: Connects to PostgreSQL (persistent data)  
+- **Without `.env`**: Uses temporary mock data (resets on server restart)  
+
+No database setup required for testing - just skip the `.env` file!
+
 ## 🔧 Installation
-1. Clone repo:
-   ```bash
-   git clone https://github.com/your-username/product-api.git
-   cd product-api
-   ```
-2. Install deps:
+1. Install deps:
    ```bash
    npm install
    ```
-3. (Optional) Database setup:
+2. (Optional) Database setup:
    ```bash
    cp .env.example .env
    # Edit .env with your PostgreSQL credentials
